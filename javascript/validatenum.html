@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" id="num">
+	<button type="button" onclick="myfun()">Submit </button>
+	<p id="demo"></p>
+
+
+<script>
+	function myfun(){
+		var x, text;
+		x = document.getElementById("num").value;
+
+		if(isNaN(x) || x<18 || x>40){
+			text="Not valid Age"
+		}else{
+			text="age is valid";
+		}
+		document.getElementById("demo").innerHTML=text;
+	}
+</script>
+</body>
+
+</html>

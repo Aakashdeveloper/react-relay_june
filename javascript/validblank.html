@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function valid(){
+			var x = document.forms["myform"]["fname"].value;
+			if(x == ""){
+				alert("fill the fname");
+				return false
+			}
+		}
+	</script>
+</head>
+<body>	
+	<form  name="myform"  action="#" onsubmit="return valid()" method="post">
+		Fname:<input type="text" name="fname"><br>
+		Lname:<input type="text" name="lname"><br>
+		<input type="submit" value="submit">
+	</form>
+</body>
+</html>
