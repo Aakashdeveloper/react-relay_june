@@ -1,20 +1,19 @@
 import React, {PropTypes} from 'react';
-import Header from './common/Header';
+import Header from './common/Header'
 
-class App extends React.Component {
-	render() {
-		return (
+class App extends React.Component{
+	render()
+	{ return (
+		<div className="container-fluid">
+			<Header/>
+			{this.props.children}
 			
-			<div className="container">
-				<Header/>
-				{this.props.children}
-			</div>
+		</div>
 		);
 	}
-}
-
-App.protoTypes ={
-	children: PropTypes.object.isRequired
 };
 
+App.propTypes = {
+	children: PropTypes.object.isRequired
+}
 export default App;
